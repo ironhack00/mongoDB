@@ -1,0 +1,3 @@
+use('cursoPlatziMongodb');
+
+db.products.find()

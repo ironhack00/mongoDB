@@ -1,0 +1,12 @@
+use("platzi_store")
+
+db.products.updateOne(
+    { _id: ObjectId("65f3271da2816aec708087a5")},
+    {
+        $set:{
+            name: "new name"
+        }
+    }
+)
+
+db.products.find()
