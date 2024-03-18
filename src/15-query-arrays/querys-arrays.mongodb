@@ -1,0 +1,27 @@
+use('platzi_store');
+
+/* db.inventory.find(
+    {
+        qty: { $in: [25, 20] },
+        
+        
+    }
+    
+); */
+
+/* db.inventory.countDocuments(
+    {
+        qty: { $in: [25, 20] }
+    }
+); */
+
+db.survey.find(
+    {
+        results: {
+            $elemMatch: {
+                product: "abc",
+                score: 8
+            }
+        }
+    }
+);
